@@ -1,13 +1,11 @@
 .root {
     font: Roboto;
-    --primery-text-color: color: #757575;
-    --title-text-color: color: #212121;
-    --font: Roboto;
+    --primery-text-color: rgba (117, 117, 117. 1);
+    --title-text-color: rgba (33, 33, 33. 1);
 }
 
 body {
     color: var(--primery-text-color) (--title-text-color);
-    font: var(--font);
 }
 
 .ul-none-mark {
@@ -15,6 +13,7 @@ body {
 }
 
 .h2 {
+    color: var(--title-text-color);
     font-style: bold;
     font-size: 36px;
     line-height: 42px;
@@ -32,13 +31,14 @@ body {
     color: #2196F3;
 }
 .nav-menu-ref {
+    color: var(--title-text-color);
     font-size: 14px;
     font-style: medium;
     line-height: 16px;
     line-height: 100%;
     align-content: left;
     vertical-align: top;
-    letter-spacing: 2%;     
+    letter-spacing: 2%;    
 }
 
 .main-hero {
@@ -49,6 +49,7 @@ body {
 }
 
 .main-title {
+    color: var(--title-text-color);
     font-size: 14px;
     font-style: bold;
     line-height: 16px;
@@ -58,6 +59,7 @@ body {
     letter-spacing: 3%;   
 }
 .main-description {
+    color: var(--primery-text-color);
     font-size: 14px;
     font-style: regular;
     line-height: 24px;
@@ -66,7 +68,7 @@ body {
     vertical-align: top;
     letter-spacing: 3%;
 }
-.main-photo {
+.photo {
 
 }
 .photo-title {
@@ -76,13 +78,14 @@ body {
 
 }
 
-.colegues-list {
+.team-list {
 
 }
-.person {
+.team-person {
     
 }
 .person-name {
+    color: var(--title-text-color);
     font-size: medium;
     font-style: 16px;
     line-height: 19px;
@@ -92,6 +95,7 @@ body {
     letter-spacing: 3%;
 }
 .person-tasks {
+    color: var(--primery-text-color);
     font-size: 16px;
     font-style: regular;
     line-height: 19px;
