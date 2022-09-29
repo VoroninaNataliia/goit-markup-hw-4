@@ -1,0 +1,102 @@
+.root {
+    font: Roboto;
+    --primery-text-color: color: #757575;
+    --title-text-color: color: #212121;
+    --font: Roboto;
+}
+
+body {
+    color: var(--primery-text-color) (--title-text-color);
+    font: var(--font);
+}
+
+.ul-none-mark {
+    list-style-type: none;
+}
+
+.h2 {
+    font-style: bold;
+    font-size: 36px;
+    line-height: 42px;
+    line-height: 100%;
+    align-self: center;
+    vertical-align: top;
+    letter-spacing: 3%;
+}
+
+.logo {
+    color: #2196F3;
+    color: #000000
+}
+.site-nav-link {
+    color: #2196F3;
+}
+.nav-menu-ref {
+    font-size: 14px;
+    font-style: medium;
+    line-height: 16px;
+    line-height: 100%;
+    align-content: left;
+    vertical-align: top;
+    letter-spacing: 2%;     
+}
+
+.main-hero {
+
+}
+.main {
+
+}
+
+.main-title {
+    font-size: 14px;
+    font-style: bold;
+    line-height: 16px;
+    line-height: 100%;
+    align-content: left;
+    vertical-align: top;
+    letter-spacing: 3%;   
+}
+.main-description {
+    font-size: 14px;
+    font-style: regular;
+    line-height: 24px;
+    line-height: 146%;
+    align-content: left;
+    vertical-align: top;
+    letter-spacing: 3%;
+}
+.main-photo {
+
+}
+.photo-title {
+
+}
+.team {
+
+}
+
+.colegues-list {
+
+}
+.person {
+    
+}
+.person-name {
+    font-size: medium;
+    font-style: 16px;
+    line-height: 19px;
+    line-height: 100%;
+    align-content: center;
+    vertical-align: top;
+    letter-spacing: 3%;
+}
+.person-tasks {
+    font-size: 16px;
+    font-style: regular;
+    line-height: 19px;
+    line-height: 100%;
+    align-content: center;
+    vertical-align: top;
+    letter-spacing: 3%;
+}
