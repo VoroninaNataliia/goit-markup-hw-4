@@ -1,100 +1,99 @@
 .root {
-    font: Roboto;
-    --primery-text-color: rgba (117, 117, 117. 1);
-    --title-text-color: rgba (33, 33, 33. 1);
+  --primery-text-color: rgba(117, 117, 117.1);
+  --title-text-color: rgb(33, 33, 33);
 }
 
 body {
-    color: var(--primery-text-color) (--title-text-color);
+  
 }
 .links {
-    text-decoration: none;
+  text-decoration: none;
 }
-.logo-blue {
-    color: #2196F3;
-    font-style: Bold;
-    font-size: 26px;
-    line-height: 31px;
-    line-height: 100%;
-    align-self: left;
-    vertical-align: top;
-    letter-spacing: 3%;
-    
 
+.links:hover {
+    color: #2196F3;
 }
+.links-nav {
+    color: var(--primery-text-color);
+    font-weight: normal;
+    font-style: 16px;
+}
+
+.links-contact {
+    color: #757575;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.links-footer {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.links-footer-addres {
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 14px;   
+}
+  
+
+.logo-blue {
+    color: #2196f3;
+    font-weight: bold;
+    font-size: 26px;
+}
+
 .logo-black {
     color: #000000;
-    font-style: Bold;
+    font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
-    line-height: 100%;
-    align-self: left;
-    vertical-align: top;
-    letter-spacing: 3%;
 }
+
 .ul-none-mark {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .h2 {
     color: var(--title-text-color);
-    font-style: bold;
+    font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
-    line-height: 100%;
-    align-self: center;
-    vertical-align: top;
-    letter-spacing: 3%;
 }
 
-
-.site-nav-link {
-    color: #2196F3;
-}
-.nav-menu-ref {
-    color: var(--title-text-color);
-    font-size: 14px;
-    font-style: medium;
-    line-height: 16px;
-    line-height: 100%;
-    align-content: left;
-    vertical-align: top;
-    letter-spacing: 2%;    
-}
+/*головна сторінка*/
 
 .main-hero {
 
 }
-.main {
+<--додати в h1 секції main-hero-->
+.main-hh {
+    color: #FFFFFF;
+    font-size: 44px;
+}
+
+.button-order {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+.main-preorities {
 
 }
 
 .main-title {
-    color: var(--title-text-color);
-    font-size: 14px;
-    font-style: bold;
-    line-height: 16px;
-    line-height: 100%;
-    align-content: left;
-    vertical-align: top;
-    letter-spacing: 3%;   
+  color: var(--title-text-color);
+  font-size: 14px;
+  font-weight: bold;
 }
 .main-description {
     color: var(--primery-text-color);
     font-size: 14px;
-    font-style: regular;
-    line-height: 24px;
-    line-height: 146%;
-    align-content: left;
-    vertical-align: top;
-    letter-spacing: 3%;
+    font-weight: normal;
 }
+
 .photo {
 
 }
-.photo-title {
 
-}
 .team {
 
 }
@@ -103,25 +102,23 @@ body {
 
 }
 .team-person {
-    
+
 }
 .person-name {
     color: var(--title-text-color);
-    font-size: medium;
+    font-weight: normal;
     font-style: 16px;
-    line-height: 19px;
-    line-height: 100%;
-    align-content: center;
-    vertical-align: top;
-    letter-spacing: 3%;
 }
+
 .person-tasks {
-    color: var(--primery-text-color);
-    font-size: 16px;
-    font-style: regular;
-    line-height: 19px;
-    line-height: 100%;
-    align-content: center;
-    vertical-align: top;
-    letter-spacing: 3%;
+  color: var(--primery-text-color);
+  font-size: 16px;
+  font-weight: normal;
+}
+/*портфоліо*/
+.button-portfolio {
+    background-color: #F5F4FA;
+    color: #212121;
+    font-weight: normal;
+    font-size: 16px;  
 }
