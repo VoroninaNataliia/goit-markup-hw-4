@@ -1,6 +1,5 @@
-.root {
-  --primery-text-color: rgba(117, 117, 117.1);
-  --title-text-color: rgb(33, 33, 33);
+:root {
+--primery-text-color: #757575;
 }
 
 /*загальні класи*/
@@ -8,14 +7,15 @@
     list-style-type: none;
 }
 .body-text {
-    color: #212121;
-    font-family: ;
+    color: #212121;  
 }
+
+/*стилізація посилань*/
 .links {
     text-decoration: none;
-    color: var(--primery-text-color);
     font-weight: normal;
     font-style: 16px;
+    color: var(--primery-text-color);
 }
 
 .links:hover, 
@@ -23,10 +23,14 @@
     color: #2196F3;
 }
 
+.links.current {
+    color: #2196F3;
+}
+
 .links-contact {
-    color: #757575;
     font-weight: normal;
     font-size: 14px;
+    color: #757575;
 }
 
 .links-footer {
@@ -61,7 +65,6 @@
 }
 
 .h2 {
-    color: var(--title-text-color);
     font-weight: bold;
     font-size: 36px;
 }
@@ -86,7 +89,6 @@
 }
 
 .main-title {
-    color: var(--title-text-color);
     font-size: 14px;
     font-weight: bold;
 }
@@ -112,7 +114,6 @@
 
 }
 .person-name {
-    color: var(--title-text-color);
     font-weight: normal;
     font-style: 16px;
 }
@@ -130,7 +131,6 @@
 }
 
 .project-names {
-    color: var(--title-text-color);
     font-weight: bold;
     font-style: 18px;
 }
