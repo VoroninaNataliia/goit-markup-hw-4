@@ -3,17 +3,23 @@
   --title-text-color: rgb(33, 33, 33);
 }
 
-body {
-  
+/*загальні класи*/
+.body-nomaker-ul ul {
+    list-style-type: none;
+}
+.body-text {
+    color: #212121;
+    font-family: ;
 }
 .links {
     text-decoration: none;
-        color: var(--primery-text-color);
+    color: var(--primery-text-color);
     font-weight: normal;
     font-style: 16px;
 }
 
-.links:hover {
+.links:hover, 
+.links:focus {
     color: #2196F3;
 }
 
@@ -50,12 +56,8 @@ body {
 
 .logo-white {
     color: #FFFFFF;
-        font-weight: bold;
-        font-size: 26px;
-}
-
-.ul-none-mark {
-    list-style-type: none;
+    font-weight: bold;
+    font-size: 26px;
 }
 
 .h2 {
@@ -65,18 +67,14 @@ body {
 }
 
 /*головна сторінка*/
+.main-hero {
+    background-color: #2F303A;
+}
+
 .main-h1 {
     color: #FFFFFF;
     font-size: 44px;
     font-weight: bold;
-}
-.main-hero {
-    background-color: #2F303A;
-}
-/*додати в h1 секції main-herо*/
-.main-hh {
-    color: #FFFFFF;
-    font-size: 44px;
 }
 
 .button-order {
@@ -92,6 +90,7 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
 .main-description {
     color: var(--primery-text-color);
     font-size: 14px;
