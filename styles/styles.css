@@ -8,16 +8,13 @@ body {
 }
 .links {
     text-decoration: none;
+        color: var(--primery-text-color);
+    font-weight: normal;
+    font-style: 16px;
 }
 
 .links:hover {
     color: #2196F3;
-}
-
-.links-nav {
-    color: var(--primery-text-color);
-    font-weight: normal;
-    font-style: 16px;
 }
 
 .links-contact {
@@ -38,7 +35,7 @@ body {
     font-size: 14px;   
 }
   
-
+/*оформлення логотипів*/
 .logo-blue {
     color: #2196f3;
     font-weight: bold;
@@ -49,6 +46,12 @@ body {
     color: #000000;
     font-weight: bold;
     font-size: 26px;
+}
+
+.logo-white {
+    color: #FFFFFF;
+        font-weight: bold;
+        font-size: 26px;
 }
 
 .ul-none-mark {
@@ -62,9 +65,13 @@ body {
 }
 
 /*головна сторінка*/
-
+.main-h1 {
+    color: #FFFFFF;
+    font-size: 44px;
+    font-weight: bold;
+}
 .main-hero {
-
+    background-color: #2F303A;
 }
 /*додати в h1 секції main-herо*/
 .main-hh {
@@ -114,14 +121,12 @@ body {
 .person-tasks {
     color: var(--primery-text-color);
     font-size: 16px;
-    font-weight: normal;
 }
 
 /*портфоліо*/
 .button-portfolio {
     background-color: #F5F4FA;
     color: #212121;
-    font-weight: normal;
     font-size: 16px;  
 }
 
@@ -133,6 +138,13 @@ body {
 
 .project-type {
     color: var(--primery-text-color);
-    font-weight: normal;
     font-size: 16px;
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-address {
+    font-style: normal;
 }
