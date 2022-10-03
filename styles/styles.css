@@ -10,7 +10,7 @@ body {
     background-color: #FFFFFF;  
 }
 
-a,
+a, 
 .body-nomaker-ul ul {
     list-style-type: none;
     text-decoration: none;
@@ -22,6 +22,17 @@ a,
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+}
+.logo-blue {
+    color: #2196F3;
+}
+
+.logo-black {
+    color: #000000;
+}
+
+.logo-white {
+    color: #FFFFFF;
 }
 
 /*посилання*/
@@ -137,6 +148,7 @@ footer {
 
 /*портфоліо*/
 .button-portfolio {
+    cursor: pointer;
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -157,7 +169,7 @@ footer {
     background-color: #FFFFFF;
 }
 
-.project-names {
+.project-name {
     text-decoration: none;
     font-weight: 700;
     font-size: 18px;
