@@ -1,13 +1,20 @@
 :root {
+--main-text-color: color: #212121;
 --primery-text-color: #757575;
+--brand-color: #2196F3;
+--brand-color-studio: #000000;
+--brand-color-footer: #FFFFFF;
+--main-background-color: #FFFFFF;
+--footer-background-color: #2F303A;
 }
 
 /*загальні*/
 body {
     font-family: Roboto, sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
-    color: #212121;
-    background-color: #FFFFFF;  
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);  
 }
 
 a, 
@@ -23,25 +30,24 @@ a,
     font-size: 26px;
     line-height: 1.19;
 }
-.logo-blue {
-    color: #2196F3;
+.logo-brand-color {
+    color: var(--brand-color);
 }
 
-.logo-black {
-    color: #000000;
+.logo-studio {
+    color: var(--brand-color-studio);
 }
 
-.logo-white {
-    color: #FFFFFF;
+.logo-studio-footer {
+    color: var(--brand-color-footer);
 }
 
 /*посилання*/
 .links-nav {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-text-color);
 }
 
 .links-nav.current,
@@ -49,34 +55,31 @@ a,
 .links-nav:focus,
 .links-contact:hover,
 .links-contact:focus {
-    color: #2196F3;
+    color: var(--brand-color)
 }
 
 .links-contact {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--primery-text-color);
 }
 
 .links-footer-addres {
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
     color: #FFFFFF;
 }
 
 .links-footer-contact {
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
 
 /*додаткова стилізація футера*/
 footer {
-    background-color: #2F303A;
+    background-color: var(--footer-background-color)
 }
 
 /*головна сторінка*/
@@ -89,7 +92,6 @@ footer {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    vertical-align: top;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
@@ -101,18 +103,20 @@ footer {
     text-align: center;
     vertical-align: bottom;
     letter-spacing: 0.06em;
-    background-color: #2196F3;
+    background-color: var(--brand-color);
     color: #FFFFFF;   
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .main-title {
-    font-weight: 700;
-    font-size: 14px;
+    text-transform: uppercase;
     line-height: 1.14;
 }
 
 .main-description {
-    font-size: 14px;
     line-height: 1.71;
     color: var(--primery-text-color);
 }
@@ -121,19 +125,17 @@ footer {
     background-color: #F5F4FA;
 }
 
-.title-h2{
-    font-weight: 700;
+.section-title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
 
 .person {
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
 }
 
 .person-name {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -147,6 +149,9 @@ footer {
 }
 
 /*портфоліо*/
+.portfolio-filter {
+    display: inline;
+}
 .button-portfolio {
     cursor: pointer;
     font-family: Roboto, sans-serif;
@@ -156,26 +161,24 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
-    color: #212121;
+    color: var(--main-text-color);
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-    background-color: #2196F3;
+    background-color: var(--brand-color);
     color: #FFFFFF;
 }
 
 .project-section {
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
 }
 
 .project-name {
-    text-decoration: none;
-    font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    color: #212121;
 }
 
 .project-type {
