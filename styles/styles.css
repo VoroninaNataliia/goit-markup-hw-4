@@ -1,6 +1,7 @@
 :root {
 --main-text-color: color: #212121;
 --primery-text-color: #757575;
+--additional-text-color: #FFFFFF;
 --brand-color: #2196F3;
 --brand-color-studio: #000000;
 --brand-color-footer: #FFFFFF;
@@ -54,7 +55,9 @@ a,
 .links-nav:hover, 
 .links-nav:focus,
 .links-contact:hover,
-.links-contact:focus {
+.links-contact:focus,
+.links-footer-contact:hover,
+.links-footer-contact:focus {
     color: var(--brand-color)
 }
 
@@ -68,7 +71,7 @@ a,
 .links-footer-addres {
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: var(--additional-text-color)
 }
 
 .links-footer-contact {
@@ -88,12 +91,13 @@ footer {
 }
 
 .main-h1 {
+    text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--additional-text-color)
 }
 
 .button-hero {
@@ -107,11 +111,12 @@ footer {
     color: #FFFFFF;   
 }
 
-.hidden {
+.visaully-hidden {
     visibility: hidden;
 }
 
 .main-title {
+    font-size: 14px;
     text-transform: uppercase;
     line-height: 1.14;
 }
