@@ -1,3 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+
 :root {
 --main-text-color: color: #212121;
 --primery-text-color: #757575;
@@ -10,6 +24,96 @@
 }
 
 /*загальні*/
+
+.header-box {
+    display: flex;
+    justify-content: center;
+
+    width: 1600px;
+    /*временно*/
+    background-color: aquamarine;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+     /*временно*/
+    background-color: tomato;
+}
+
+.nav-container {
+    display: flex;
+
+    
+}
+
+.pages-container {
+ display: flex;
+ justify-content: space-between;
+
+ width: 281px;
+ padding-left: 0px;
+}
+
+.pages-item {
+    display: flex;
+}
+
+.contacts-container {
+    display: flex;
+}
+
+.contacts-item {
+    padding-right: 50px;
+}
+
+.contacts-container .contacts-item:not(:first-child) {
+    padding-right: 0px;
+}
+
+.company-box {
+    display: flex;
+    justify-content: center;
+
+    width: 1600px;
+    /*временно*/
+    background-color: aquamarine;
+   
+}
+
+.benefits-container {
+    display: flex;
+    /*возможно при добавлении картинок сломается блок*/
+    flex-direction: column;
+
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+     /*временно*/
+    background-color: tomato;   
+}
+
+.advantages-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.advantages-item {
+
+}
+
+
 body {
     font-family: Roboto, sans-serif;
     font-size: 14px;
