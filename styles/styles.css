@@ -195,10 +195,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
     background-color: #F5F4FA;
 
     width: 1600px;
+
+    padding-top: 94px;
+    padding-right: 0px;
+    padding-bottom: 94px;
+    padding-left: 0px;
 }
 
 .person-container {
@@ -325,16 +332,6 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #EEEEEE;
     border: 1px;
 }
-    
-
-
-.project-description {
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 10px;
-    padding-left: 24px;
-}
-
 
 /*загальні text-color-fonts*/
 
@@ -460,14 +457,6 @@ footer {
     color: var(--primery-text-color);
 }
 
-.team {
-    background-color: #F5F4FA;
-
-    padding-top: 94px;
-    padding-right: 0px;
-    padding-bottom: 94px;
-    padding-left: 0px;
-}
 
 .section-title{
     font-size: 36px;
@@ -538,13 +527,27 @@ border-radius: 0px, 0px, 4px, 4px;
 }
 
 .project-name {
+    display: block;
+
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+
+    margin-top: 20px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .project-type {
+    display: block;
+
     font-size: 16px;
     line-height: 1.88;
     color: var(--primery-text-color);
+
+    margin-top: 0px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    margin-left: 24px;
 }
