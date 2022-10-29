@@ -23,50 +23,63 @@ h1, h2, h3, h4, h5, h6 {
 --footer-background-color: #2F303A;
 }
 
-/*загальні*/
+/*flex construction*/
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .header-box {
     display: flex;
     justify-content: center;
 
     width: 1600px;
-    /*временно*/
-    background-color: aquamarine;
-
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
 
-     /*временно*/
-    background-color: tomato;
+    padding-top: 24px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-left: 15px;
 }
 
 .nav-container {
     display: flex;
-
-    
+    justify-content: space-between;
+    align-items: center;   
 }
 
 .pages-container {
- display: flex;
- justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
- width: 281px;
- padding-left: 0px;
+    width: 281px;
+    padding-left: 0px;
+    margin-left: 93px;
 }
 
 .pages-item {
     display: flex;
+
 }
 
 .contacts-container {
     display: flex;
+    align-items: center;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
 
 .contacts-item {
@@ -77,14 +90,36 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 0px;
 }
 
+.hero-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 600px;
+    background-color: #2F303A;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-item{
+    padding-bottom: 30px;
+}
+
+.hero-item:not(:first-child) {
+    padding-bottom: 0px;
+}
+
 .company-box {
     display: flex;
     justify-content: center;
 
-    width: 1600px;
-    /*временно*/
-    background-color: aquamarine;
-   
+    width: 1600px;  
 }
 
 .benefits-container {
@@ -92,13 +127,13 @@ h1, h2, h3, h4, h5, h6 {
     /*возможно при добавлении картинок сломается блок*/
     flex-direction: column;
 
-
     width: 1200px;
+
+    padding-top: 94px;
     padding-left: 15px;
+    padding-bottom: 94px;
     padding-right: 15px;
 
-     /*временно*/
-    background-color: tomato;   
 }
 
 .advantages-container {
@@ -109,10 +144,130 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 0px;
 }
 
-.advantages-item {
+.creation-box {
+    display: flex;
+    justify-content: center;
+
+    width: 1600px;
+}
+
+.creation-container {
+    display: flex;
+    /*возможно при добавлении картинок сломается блок*/
+    flex-direction: column;
+
+
+    width: 1200px;
+
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+}
+
+.development-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 
 }
 
+.development-item {
+    width: 370px;
+    height: 370px;
+}
+
+.team-box {
+    display: flex;
+    justify-content: center;
+    width: 1600px;
+    background-color: #F5F4FA;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    background-color: #F5F4FA;
+
+    width: 1600px;
+}
+
+.person-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+
+    width: 1600px;
+    background-color: var(--footer-background-color);
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 1200px;
+
+    padding-top: 60px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    padding-left: 0px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+.adress-container {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+/*загальні text-color-fonts*/
 
 body {
     font-family: Roboto, sans-serif;
@@ -128,7 +283,7 @@ a,
     text-decoration: none;
 }
 
-/*логотип*/
+/*--логотип*/
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -147,7 +302,7 @@ a,
     color: var(--brand-color-footer);
 }
 
-/*посилання*/
+/*--посилання*/
 .links-nav {
     font-weight: 500;
     line-height: 1.14;
@@ -184,7 +339,7 @@ a,
     color: rgba(255, 255, 255, 0.6);
 }
 
-/*додаткова стилізація футера*/
+/*--додаткова стилізація футера*/
 footer {
     background-color: var(--footer-background-color)
 }
@@ -205,6 +360,12 @@ footer {
 }
 
 .button-hero {
+
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-left: 10px;
+    padding-left: 32px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -232,6 +393,11 @@ footer {
 
 .team {
     background-color: #F5F4FA;
+
+    padding-top: 94px;
+    padding-right: 0px;
+    padding-bottom: 94px;
+    padding-left: 0px;
 }
 
 .section-title{
@@ -244,10 +410,18 @@ footer {
     background-color: var(--main-background-color);
 }
 
+/*не работает*/
+.person-container.person {
+border-radius: 0px, 0px, 4px, 4px;
+}
+
 .person-name {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .person-tasks {
@@ -255,9 +429,16 @@ footer {
     line-height: 1.19;
     text-align: center;
     color: var(--primery-text-color);
+
+    padding-bottom: 30px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
 
-/*портфоліо*/
+/*портфоліо сторінка*/
 .portfolio-filter {
     display: inline;
 }
