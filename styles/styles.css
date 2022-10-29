@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 --footer-background-color: #2F303A;
 }
 
-/*flex construction*/
+/*flex construction index-page*/
 
 .global-container {
     display: flex;
@@ -267,6 +267,75 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0px;
 }
 
+/*flex construction portfolio-page*/
+
+.portfolio-box {
+    display: flex;
+    justify-content: center;
+
+    width: 1600px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1200px;
+
+    margin-bottom: 79px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 70px;
+    padding-right: 15px;
+    padding-bottom: 35px;
+    padding-left: 15px;
+
+}
+.project-container {
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+    padding-left: 0px;
+}
+
+.project-item {
+
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+    /*не работает*/
+    border-color: #EEEEEE;
+    border: 1px;
+}
+    
+
+
+.project-description {
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+}
+
+
 /*загальні text-color-fonts*/
 
 body {
@@ -441,6 +510,9 @@ border-radius: 0px, 0px, 4px, 4px;
 /*портфоліо сторінка*/
 .portfolio-filter {
     display: inline;
+
+    margin-right: 4px;
+    margin-left: 4px;
 }
 .button-portfolio {
     cursor: pointer;
