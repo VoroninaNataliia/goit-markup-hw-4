@@ -40,6 +40,26 @@ a,
     text-decoration: none;
 }
 
+.section-title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.visaully-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+        
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
 /*logo style*/
 
 .logo {
@@ -117,6 +137,10 @@ a,
     padding-left: 15px;
 }
 
+.header {
+    border-bottom: solid 1px #ECECEC;
+}
+
 .header-logo {
     display: block;
     
@@ -156,13 +180,15 @@ a,
 .contacts-item {
     margin-right: 30px;
 }
-
+/* 
 .contacts-item:last-child {
     margin-right: 0px;
 }
-/* почему не работает? 
+ */
+
+
 .contacts-item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 /* main */
@@ -174,7 +200,7 @@ a,
     display: flex;
     flex-direction: column;
 
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -200,13 +226,13 @@ a,
 
 .button-hero {
     display: block;
-    /* костыль или нет, почему не центрируется через свойства флекс-содержимого? */
+    /* костыль или нет?, почему не центрируется через свойства флекс-содержимого? */
     margin-left: auto;
     margin-right: auto;
 
-    width: 200px;
-    /* почему изменяет размер кнопки - 
-    padding: 10px 32px; */
+    padding: 10px 32px;
+
+    border: 0px;
     border-radius: 4px;
 
     font-weight: 700;
@@ -230,10 +256,6 @@ a,
     padding-bottom: 94px;
 }
 
-.visaully-hidden {
-    display: none;
-    margin: 0px; padding: 0px;
-}
 
 .advantages-container {
     display: flex;
@@ -259,8 +281,7 @@ a,
 /* section development */
 
 .development {
-    display: flex;
-    flex-direction: column;
+    display: block;
 
     padding-bottom: 94px;
 }
@@ -285,11 +306,9 @@ a,
 /* section team */
 
 .team {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    align-items: center;
 
-    min-width: 1600px;
     padding: 94px 0px;
 
     background-color: #F5F4FA;
@@ -301,64 +320,98 @@ a,
 
 .person-container {
     display: flex;
-    justify-content: space-between;
-    width: 1200px;
-
- 
- 
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-left: 15px;
+    padding-right: 15px; 
 }
 
-.footer-box {
+.person-item {
     display: flex;
-    justify-content: center;
+    width: 270px;
+
+    margin-right: 30px;
+    border-radius: 3px;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-
-    width: 1600px;
-    background-color: var(--footer-background-color);
-
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+.person-item:last-child {
+    margin-right: 0px;    
 }
 
-.footer-item {
+/* 
+.person-item:not(:last-child) {
+    margin-right: 30px;    
+}
+ */
+
+.person {
+    background-color: var(--main-background-color);
+}
+
+
+/*не работает*/
+.person {
+    border-radius: 0px 0px 4px 4px;
+/* как задать тени ???*/
+    box-shadow: 0px, 2px
+    rgba(0, 0, 0, 0.2);
+}
+
+.person-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
-    width: 1200px;
+.person-name {
+    font-size: 16px;
+    line-height: 1.19;
 
+    margin-bottom: 10px;
+}
+
+.person-tasks {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--primery-text-color);
+
+    padding-bottom: 30px;
+    margin: 0px 0px;
+}
+
+/* style footer */
+
+footer {
+    background-color: var(--footer-background-color)
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+  
     padding-top: 60px;
-    padding-right: 15px;
-    padding-bottom: 60px;
-    padding-left: 0px;
-
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 15px;
+    padding-bottom: 60px;  
 }
 
-.adress-container {
-    display: flex;
-    flex-direction: column;
-
-    padding-top: 20px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+.logo-footer {
+    margin-bottom: 20px;
 }
 
-/*flex construction portfolio-page*/
+.adress-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+
+
+
+
+
+/*portfolio-page*/
 
 .portfolio-box {
     display: flex;
@@ -402,70 +455,12 @@ a,
 
 .project-item {
 
-    margin-top: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    margin: 15px 15px;
+    padding: 0px 0px;
 
     /*не работает*/
     border-color: #EEEEEE;
     border: 1px;
-}
-
-
-/*--додаткова стилізація футера*/
-footer {
-    background-color: var(--footer-background-color)
-}
-
-
-
-
-
-
-
-
-.section-title{
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
-
-.person {
-    background-color: var(--main-background-color);
-}
-
-/*не работает*/
-.person-container.person {
-border-radius: 0px, 0px, 4px, 4px;
-}
-
-.person-name {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-
-.person-tasks {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    color: var(--primery-text-color);
-
-    padding-bottom: 30px;
-
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
 }
 
 /*портфоліо сторінка*/
