@@ -300,23 +300,12 @@ a,
 }
 
 .person-item {
-    width: 270px;    
-}
+    width: 270px; 
 
-.person {
+    border-radius: 0px 0px 4px 4px;
+
     background-color: var(--main-background-color);
 }
-/* не работает
-
-.person-info {
-    border-top: 0px;
-    border-right: 4px;
-    border-bottom: 4px;
-    border-right: 0px;
-
-    border-color: #EEEEEE;
-}
-*/
 
 .person-info {
     display: flex;
@@ -325,6 +314,7 @@ a,
     flex-grow: 1;
 
     padding: 30px 10px;
+
 }
 
 .person-name {
@@ -361,8 +351,6 @@ footer {
 .adress-item:not(:last-child) {
     margin-bottom: 9px;
 }
-
-
 
 /*===========PORTFOLIO-PAGE================*/
 
@@ -401,8 +389,7 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     background-color: #F5F4FA;
-    color: var(--main-text-color);
-   
+    color: var(--main-text-color);   
 }
 
 .button-portfolio:hover,
@@ -416,7 +403,10 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+}
 
+.project-section {
+    flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .project-item {
@@ -427,14 +417,7 @@ footer {
 
     background-color: var(--main-background-color);
     color: var(--main-text-color);
-
 } 
-
-
-.project-section {
-    flex-basis: calc((100% - 2 * 30px) / 3);
-
-}
 
 .project-info {
     display: flex;
@@ -442,13 +425,11 @@ footer {
     align-items: flex-start;
 
     padding: 20px 24px;
-/* не работает
-    border-top: 0px;
-    border-right: 1px;
-    border-bottom: 1px;
-    border-right: 1px;
 
-    border-color: #EEEEEE;*/
+    border-top: 0px;
+    border-right: 1px solid#EEEEEE;
+    border-bottom: 1px solid#EEEEEE;
+    border-left: 1px solid#EEEEEE;
 }
 
 .project-name {
@@ -457,7 +438,6 @@ footer {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-
 }
 
 .project-type {
@@ -465,8 +445,3 @@ footer {
     line-height: 1.88;
     color: var(--primery-text-color);
 }
-
-
-
-
-
