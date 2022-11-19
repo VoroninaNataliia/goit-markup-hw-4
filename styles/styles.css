@@ -201,6 +201,16 @@ a,
     text-align: center;
 }
 
+   
+
+.office {
+    background-image: /* linear-gradient( 
+        rgba(47, 48, 58, 0.4)),*/
+        url(../images/office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .hero-item {
     max-width: 696px;         
 }
@@ -250,6 +260,34 @@ a,
 .advantages-item {  
     width: 270px;
 }
+
+.advantages-item::before {
+    content: " ";
+    display: block;
+
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    background-color: tomato;
+}
+ 
+.advantages-item:nth-child(1)::before {
+    background-image: url(../images/advant-antenna.png);
+}
+.advantages-item:nth-child(2)::before {
+    background-image: url(../images/advant-clock.png);
+}
+.advantages-item:nth-child(3)::before {
+    background-image: url(../images/advant-laptop.png);
+}
+.advantages-item:nth-child(4)::before {
+    background-image: url(../images/advant-cosmonavt.png);
+}
+
 
 .advantages-title {
     margin-bottom: 10px;
