@@ -34,25 +34,26 @@
             <li class="pages-item"><a href="./portfolio.html" class="links-nav">Портфоліо</a></li>
             <li class="pages-item"><a href="./index.html" class="links-nav">Контакти</a></li>
           </ul>
-
-          <ul class="navigation-contacts">
-            <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="links-contact">info@devstudio.com</a>
-            </li>
-            <li class="contacts-item">
-              <a href="tel:+380961111111" class="links-contact">+38 096 111 11 11</a>
-            </li>
-          </ul>
         </nav>
+        <ul class="contacts">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="links-contact">info@devstudio.com</a>
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="links-contact">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
       <!-----------------------hero section------------------------>
       <section class="hero">
-        <div class="hero-item">
-          <h1 class="hero-info">ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button-hero">Замовити послугу</button>
+        <div class="hero-section">
+          <div class="hero-item">
+            <h1 class="hero-info">ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="button-hero">Замовити послугу</button>
+          </div>
         </div>
       </section>
       <!------------------------advantages section---------------->
@@ -119,36 +120,38 @@
       <!------------------------team section---------------->
       <section class="section team">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="person-container">
-          <li class="person-item">
-            <img src="./images/2_igor_demyanenko.jpg" alt="Ігор Дем'яненко" width="270" />
-            <div class="person-info">
-              <h3 class="person-name">Ігор Дем'яненко</h3>
-              <p lang="en" class="person-tasks">Product Designer</p>
-            </div>
-          </li>
-          <li class="person-item">
-            <img src="./images/2_olga_repina.jpg" alt="Ольга Рєпіна" width="270" />
-            <div class="person-info">
-              <h3 class="person-name">Ольга Рєпіна</h3>
-              <p lang="en" class="person-tasks">Frontend Developer</p>
-            </div>
-          </li>
-          <li class="person-item">
-            <img src="./images/2_mukola_tarasov.jpg" alt="Микола Тарасов" width="270" />
-            <div class="person-info">
-              <h3 class="person-name">Микола Тарасов</h3>
-              <p lang="en" class="person-tasks">Marketing</p>
-            </div>
-          </li>
-          <li class="person-item">
-            <img src="./images/2_muhailo_yermakov.jpg" alt="Михайло Єрмаков" width="270" />
-            <div class="person-info">
-              <h3 class="person-name">Михайло Єрмаков</h3>
-              <p lang="en" class="person-tasks">UI Designer</p>
-            </div>
-          </li>
-        </ul>
+        <div>
+          <ul class="person-container">
+            <li class="person-item">
+              <img src="./images/2_igor_demyanenko.jpg" alt="Ігор Дем'яненко" width="270" />
+              <div class="person-info">
+                <h3 class="person-name">Ігор Дем'яненко</h3>
+                <p lang="en" class="person-tasks">Product Designer</p>
+              </div>
+            </li>
+            <li class="person-item">
+              <img src="./images/2_olga_repina.jpg" alt="Ольга Рєпіна" width="270" />
+              <div class="person-info">
+                <h3 class="person-name">Ольга Рєпіна</h3>
+                <p lang="en" class="person-tasks">Frontend Developer</p>
+              </div>
+            </li>
+            <li class="person-item">
+              <img src="./images/2_mukola_tarasov.jpg" alt="Микола Тарасов" width="270" />
+              <div class="person-info">
+                <h3 class="person-name">Микола Тарасов</h3>
+                <p lang="en" class="person-tasks">Marketing</p>
+              </div>
+            </li>
+            <li class="person-item">
+              <img src="./images/2_muhailo_yermakov.jpg" alt="Михайло Єрмаков" width="270" />
+              <div class="person-info">
+                <h3 class="person-name">Михайло Єрмаков</h3>
+                <p lang="en" class="person-tasks">UI Designer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!------------------------footer section---------------->
@@ -159,7 +162,7 @@
             ><span class="logo-brand-color" lang="en">Web</span
             ><span class="logo-studio-footer" lang="en">Studio</span></a
           >
-          <address>
+          <address class="adress">
             <ul>
               <li class="adress-item">
                 <a href="https://goo.gl/maps/y8DyPwEEGnDpnCMR8" class="links-footer-addres"
