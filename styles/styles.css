@@ -179,11 +179,26 @@ a,
 
 .contacts {
     display: flex;
-    align-items: center;
+    margin-left: auto;
 }
 
 .contacts-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.contacts-item::before {
+    content: " ";
+    display: inline-block;
+/* может размер через 100%? */
+    width: 16px; 
+    height: 16px;
+    /* не работает */
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #188CE8;
 }
 
 /* section hero */
@@ -197,22 +212,23 @@ a,
     flex-direction: column;
     align-items: center;
 
-    padding: 200px 452px;  
+    padding: 200px 0px;  
     text-align: center;
 }
 
    
 
 .office {
-    background-image: /* linear-gradient( 
-        rgba(47, 48, 58, 0.4)),*/
-        url(../images/office.jpg);
+    background-image: linear-gradient(  
+        rgba(47, 48, 58, 40%),rgba(47, 48, 58, 40%)),
+        url(../images/office.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .hero-item {
-    max-width: 696px;         
+    max-width: 696px;  
+         
 }
 
 .hero-info {
@@ -261,31 +277,8 @@ a,
     width: 270px;
 }
 
-.advantages-item::before {
-    content: " ";
-    display: block;
+.advantages-icon {
 
-    height: 120px;
-    margin-bottom: 30px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    background-color: tomato;
-}
- 
-.advantages-item:nth-child(1)::before {
-    background-image: url(../images/advant-antenna.png);
-}
-.advantages-item:nth-child(2)::before {
-    background-image: url(../images/advant-clock.png);
-}
-.advantages-item:nth-child(3)::before {
-    background-image: url(../images/advant-laptop.png);
-}
-.advantages-item:nth-child(4)::before {
-    background-image: url(../images/advant-cosmonavt.png);
 }
 
 
@@ -327,16 +320,16 @@ a,
     background-color: #F5F4FA;
 }
 
-.team-container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .person-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;    
+    gap: 30px;   
+    
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .person-item {
@@ -371,6 +364,32 @@ a,
     color: var(--primery-text-color);  
 }
 
+/* section clients */
+
+.client-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    /* при переполнении контейнера - не работает */
+    flex-basis: calc((100% - 5 * 30px) / 6 );
+    
+}
+
+.client-item {
+    width: 170px;
+    height: 92px;
+
+    background-color: #F5F5F5;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-logo {
+    size: 70px;
+
+}
+
 /* style footer */
 
 footer {
@@ -381,7 +400,7 @@ footer {
     display: flex;
     flex-direction: column;
 
-    padding: 60px 0px;
+    margin-right: 93px;
 }
 
 .logo-footer {
@@ -393,9 +412,38 @@ footer {
     font-style: normal;
 }
 
-
 .adress-item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+
+    padding: 60px 0px;
+}
+
+.style-join {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-bottom: 20px;
+}
+
+.social-list {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.social-item {
+    width: 44px;
+    height: 44px;
+
+    background-color: red;
 }
 
 /*===========PORTFOLIO-PAGE================*/
