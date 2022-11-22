@@ -415,6 +415,7 @@ a,
 .social-reference:hover,
 .social-reference:focus  {
     background-color: var(--brand-color);
+    outline: transparent;
 }
 
 /* section clients */
