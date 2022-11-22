@@ -118,16 +118,6 @@ a,
     padding: 30px 0px;
 }
 
-.links-footer-addres {   
-    color: var(--additional-text-color)
-}
-
-.links-footer-contact {
-    font-style: normal;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-}
-
 
 /* common selectors positionising */
 
@@ -344,6 +334,8 @@ a,
     border-radius: 0px 0px 4px 4px;
 
     background-color: var(--main-background-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .person-info {
@@ -406,18 +398,10 @@ a,
     border-radius: 50%;
 }
 
-.social-reference-footer {   
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
 .social-icon{
     fill: #AFB1B8;
 }
 
-.social-icon-footer {
-    fill: var(--brand-color-footer);
-    
-}
 
 .social-reference:hover .social-icon,
 .social-reference:focus .social-icon {
@@ -444,17 +428,22 @@ a,
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
-
-    padding: 16px 32px;    
+      
 }
 
 .client-reference {
-    display: block;
-    padding: 16px 32px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    padding: 16px 32px;   
+        
 }
 
 .client-icon {
@@ -468,14 +457,24 @@ a,
 
 .client-reference:hover,
 .client-reference:focus {
-    border-color: var(--brand-color);
-    outline: transparent;
+    border: 1px solid var(--brand-color);
+    outline: transparent;   
 }
 
 /* style footer */
 
 footer {
     background-color: var(--footer-background-color)
+}
+
+.links-footer-addres {   
+    color: var(--additional-text-color)
+}
+
+.links-footer-contact {
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-contacts {
@@ -513,6 +512,17 @@ footer {
     color: #FFFFFF;
 
     margin-bottom: 20px;
+}
+
+.social-icon-footer {
+    fill: var(--brand-color-footer);    
+}
+
+.social-reference-footer {   
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-reference-footer:focus {
+    outline: transparent;
 }
 
 
