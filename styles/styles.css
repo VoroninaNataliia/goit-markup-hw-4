@@ -180,7 +180,10 @@ a,
 }
 
 .contacts-svg {
-    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    margin-right: 10px;  
 }
 
 .contacts-icon {
